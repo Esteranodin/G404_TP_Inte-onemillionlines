@@ -5,23 +5,11 @@
 }
 
 body {
-    width: 100 vw;
-}
-
-.arvo-regular {
-    font-family: "Arvo", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.arvo-bold {
-    font-family: "Arvo", serif;
-    font-weight: 700;
-    font-style: normal;
+    width: 100vw;
 }
 
 nav {
-    background-color: black;
+    background-color: #393a3a;
     display: flex;
     padding: 10px;
     justify-content: space-around;
@@ -31,15 +19,77 @@ nav a {
     text-decoration: none;
     color: aliceblue;
 }
+
 nav ol {
     display: flex;
     list-style: none;
-    font-family: "Arvo";
     font-variant: small-caps;
     font-size: 1rem;
     align-items: center;
     gap: 30px;
 }
+
+#home {
+    height: 800px;
+    background-image: url("../images/hero-image.jpg");
+
+    p {
+        font-family: sans-serif;
+        font-weight: 100;
+        color: white;
+        text-align: center;
+        padding: 0 20%;
+    }
+
+    span {
+        font-variant: small-caps;
+        font-weight: 700;
+        font-size: 1, 5rem;
+    }
+}
+
+/* grossir hour of code et code.org et attention au .org plus gras */
+/* est ce que police et graisse police changent avec nesting */
+h1 {
+    font-family: "Arvo", serif;
+    font-weight: 500;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    padding: 5% 25% 5%;
+}
+
+#home button {
+    font-family: sans-serif;
+    font-weight: 500;
+    border: none;
+    line-height: 3;
+    padding: 0 20px;
+    color: aliceblue;
+    border-radius: 3px;
+    background-color: #d9534f;
+    /* ameliorer bouton et ajouter hover */
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    background: yellow;
+  }
+
+.learn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+}
+
 
 
 /* Responsive Styling */
