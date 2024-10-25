@@ -188,7 +188,7 @@ a {
 footer{
     background-color:#d9534f;
     height: 150px;
-
+/* Attention image en fixed a changer */
     img{
     position: fixed;
     bottom: 30px;
