@@ -13,7 +13,7 @@ body {
 }
 
 nav {
-    background-color: #393a3a;
+    background-color: black;
     display: flex;
     padding: 10px;
     justify-content: space-around;
@@ -28,7 +28,7 @@ nav ol {
     display: flex;
     list-style: none;
     font-variant: small-caps;
-    font-size: 1rem;
+    font-size: 1.2rem;
     align-items: center;
     gap: 30px;
 }
@@ -65,10 +65,10 @@ h1 {
 
 #home button {
     font-family: sans-serif;
-    font-weight: 500;
+    font-size: 1.2rem;
     border: none;
-    line-height: 3;
-    padding: 0 20px;
+    line-height: 2;
+    padding: 0 15px;
     color: aliceblue;
     border-radius: 3px;
     background-color: #d9534f;
@@ -82,10 +82,10 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    background-color: #b14440;
-    cursor: pointer;
+/* a:hover { 
+    background-color: aliceblue;
 }
+    */
 
 .learn {
     display: flex;
@@ -93,29 +93,33 @@ a:hover {
     align-items: center;
     padding: 5%;
 }
+
 /* changer les espaces padding en gap si possible */
 #who,
 #get-involved {
-    height: 250px;
-    padding: 2% 0 5%;
-
     h2 {
         font-family: "Arvo";
         text-align: center;
         color: #d9534f;
         font-variant: small-caps;
         font-weight: 500;
+        padding-bottom: 0.5%;
+        font-size: 1.7em;
     }
 
     hr {
-        border: 1px solid #d9534f;
-        width: 6%;
+        border: 0.1em solid #d9534f;
+        width: 7%;
         display: flex;
         justify-self: center;
     }
+
 }
 
 #who {
+    padding: 2% 0 5%;
+    height: 250px;
+
     img {
         display: flex;
         justify-self: center;
@@ -132,32 +136,66 @@ a:hover {
 }
 
 #get-involved {
+    padding: 2% 5%;
+    height: 400px;
     background-color: #f5f5f5;
-    padding: 10%;
+
     h3 {
         font-family: "Arvo";
         color: #d9534f;
         font-variant: small-caps;
         font-weight: 500;
+        font-size: 1.5em;
     }
 }
 
-.esp-cards{
+.cards {
     display: flex;
     justify-content: space-around;
 }
 
-.esp-cards article{
+.cards article {
+    width: 33%;
     display: flex;
     flex-direction: column;
     padding: 3%;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 100;
 }
+
+.cards button {
+    font-family: sans-serif;
+    border-width: 0.1em;
+    line-height: 2;
+    padding: 0 15px;
+    color: #d9534f;
+    border-radius: 3px;
+    background-color: aliceblue;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+/* corriger alignements des items et taille image avec rendering ? */
 
 .icone {
-    width: 30%;
-
-
+    width: 100px;
 }
+
+footer{
+    background-color:#d9534f;
+    height: 150px;
+
+    img{
+    position: fixed;
+    bottom: 30px;
+    left: 150px;
+    }
+}
+
 /* Responsive Styling */
 
 @media (max-width: 1199px) {}
