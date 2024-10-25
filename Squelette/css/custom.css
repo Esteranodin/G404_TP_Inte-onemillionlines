@@ -1,18 +1,51 @@
 /* Vos customisations des classes de Bootstrap */
+* {
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    width: 100 vw;
+}
 
+.arvo-regular {
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.arvo-bold {
+    font-family: "Arvo", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: aliceblue;
+}
+nav ol {
+    display: flex;
+    list-style: none;
+    font-family: "Arvo";
+    font-variant: small-caps;
+    font-size: 1rem;
+    align-items: center;
+    gap: 30px;
+}
 
 
 /* Responsive Styling */
 
-@media (max-width: 1199px) {
+@media (max-width: 1199px) {}
 
-}
+@media (max-width: 991px) {}
 
-@media (max-width: 991px) {
-
-}
-
-@media (max-width: 767px) {
-
-}
+@media (max-width: 767px) {}
