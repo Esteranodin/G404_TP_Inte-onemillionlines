@@ -30,7 +30,7 @@ nav ol {
 }
 
 #home {
-    height: 800px;
+    height: 700px;
     background-image: url("../images/hero-image.jpg");
 
     p {
@@ -68,10 +68,10 @@ h1 {
     color: aliceblue;
     border-radius: 3px;
     background-color: #d9534f;
-    /* ameliorer bouton et ajouter hover */
+    /* ameliorer bouton */
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 a {
@@ -87,9 +87,45 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2%;
+    padding: 5%;
 }
 
+#who, #get-involved{
+    height: 350px;
+    padding: 5%;
+    h2{
+        font-family: "Arvo";
+        text-align: center;
+        color: #d9534f;
+        font-variant: small-caps;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    hr{
+        border: 1px solid #d9534f;
+        width: 6%;
+        display: flex;
+        justify-self: center;      
+    }
+}
+
+#who {
+    img{
+        display: flex;
+        justify-self: center;
+    }
+    p{
+        font-family: sans-serif;
+        font-weight: 100;
+        color:black;
+        text-align: center;
+        padding: 2% 20%;
+    }
+}
+
+.orange{
+color: #d9534f;
+}
 
 
 /* Responsive Styling */
