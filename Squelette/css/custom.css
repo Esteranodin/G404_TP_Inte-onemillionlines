@@ -93,7 +93,6 @@ h1 {
 #get-involved {
     display: flex;
     flex-direction: column;
-    padding-top: 3%;
     gap: 0.5rem;
     align-items: center;
 
@@ -119,6 +118,7 @@ h1 {
 
 #who {
     align-items: center;
+    padding-top: 3%;
 
     img {
         width: 10%;
@@ -204,11 +204,28 @@ footer {
 /* Responsive Styling */
 
 @media (max-width: 1199px) {
-    .cards{
+    .cards {
         flex-direction: column;
+        align-items: center;
+
+        article {
+            width: 100%;
+        }
     }
 }
 
-@media (max-width: 991px) {}
+@media (max-width: 991px) {
+    #who {
+        p {
+            padding: 0 0 2%;
+        }
+    }
+    #get-involved {
+        padding: 2% 0 2%;
+    }
+}
+
+
+
 
 @media (max-width: 767px) {}
