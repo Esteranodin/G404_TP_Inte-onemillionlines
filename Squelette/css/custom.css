@@ -11,11 +11,13 @@ body {
 
 .orange {
     color: #d9534f;
+    font-weight: 600;
 }
 
 /* taille typo des element de liste */
 p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
 }
 
 nav {
@@ -29,6 +31,8 @@ nav a {
     text-decoration: none;
     color: rgb(220, 216, 216);
     font-family: "Arvo";
+    font-size: 0.8rem;
+    font-weight: 100;
 
     &:hover {
         color: rgb(255, 255, 255);
@@ -43,12 +47,9 @@ nav ol {
 }
 
 #home {
-    height: 660px;
     background-image: url("../images/hero-image.jpg");
 
-
     p {
-        font-weight: 200;
         color: white;
         text-align: center;
         padding: 0 20% 3%;
@@ -77,8 +78,6 @@ h1 {
     color: aliceblue;
     border-radius: 3px;
     background-color: #d9534f;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .learn {
@@ -92,38 +91,44 @@ h1 {
 
 #who,
 #get-involved {
-    gap: 4rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+    gap: 0.5rem;
+    align-items: center;
 
     h2 {
         font-family: "Arvo";
         text-align: center;
         color: #d9534f;
         font-variant: small-caps;
-        font-weight: 500;
-        font-size: 1.7em;
+        font-weight: 600;
+        font-size: 1.3em;
     }
 
     hr {
-        border: 0.1em solid #d9534f;
-        width: 7%;
+        border: none;
+        background-color: #d9534f;
+        width: 9%;
         display: flex;
         justify-self: center;
+        height: 1.5px;
+        border: none;
     }
-
 }
 
 #who {
-    padding: 2% 0 5%;
+    align-items: center;
 
     img {
+        width: 10%;
         display: flex;
-        justify-self: center;
     }
 
     p {
         color: black;
         text-align: center;
-        padding: 3% 20%;
+        padding: 0 20% 2%;
     }
 }
 
@@ -135,63 +140,74 @@ h1 {
         font-family: "Arvo";
         color: #d9534f;
         font-variant: small-caps;
-        font-weight: 500;
-        font-size: 1.5em;
+        font-weight: 600;
+        font-size: 1.2em;
+    }
+
+    p {
+        color: black;
+        text-align: center;
+        padding-bottom: 5%;
     }
 }
 
 .cards {
     display: flex;
-    justify-content: space-around;
+    gap: 1rem;
+    justify-content: center;
 }
 
 .cards article {
-    width: 33%;
+    padding: 3%;
+    text-align: center;
+    width: 30%;
+    gap: 0.8em;
     display: flex;
     flex-direction: column;
-    padding: 3%;
-    gap: 20px;
-    justify-content: space-evenly;
     align-items: center;
-    text-align: center;
-    font-family: sans-serif;
-    font-weight: 100;
+    justify-content: space-between;
 }
 
 .cards button {
     font-family: sans-serif;
-    border-width: 0.1em;
-    line-height: 2;
+    font-weight: 600;
+    border: none;
+    line-height: 2.5;
     padding: 0 15px;
     color: #d9534f;
     border-radius: 3px;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 40px;
 }
 
-/* corriger alignements des items et taille image avec rendering ? */
-
 .icone {
-    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(210, 199, 199);
+    border-radius: 100%;
+    padding: 25px;
+
+    img {
+        width: 75px;
+        height: 75px;
+    }
+
 }
 
 footer {
     background-color: #d9534f;
-    height: 150px;
-
-    /* Attention image en fixed a changer */
-    img {
-        position: ;
-        bottom: 30px;
-        left: 150px;
-    }
+    padding: 7% 5% 5%;
 }
 
 /* Responsive Styling */
 
-@media (max-width: 1199px) {}
+@media (max-width: 1199px) {
+    .cards{
+        flex-direction: column;
+    }
+}
 
 @media (max-width: 991px) {}
 
