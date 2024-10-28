@@ -9,12 +9,15 @@ body {
     width: 100vw;
 }
 
+a {
+    text-decoration: none;
+}
+
 .orange {
     color: #d9534f;
     font-weight: 600;
 }
 
-/* taille typo des element de liste */
 p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 300;
@@ -28,7 +31,6 @@ nav {
 }
 
 nav a {
-    text-decoration: none;
     color: rgb(220, 216, 216);
     font-family: "Arvo";
     font-size: 0.8rem;
@@ -69,7 +71,7 @@ h1 {
     padding: 5% 20% 5%;
 }
 
-#home button {
+#home a {
     font-family: sans-serif;
     font-size: 1.2rem;
     border: none;
@@ -78,6 +80,10 @@ h1 {
     color: aliceblue;
     border-radius: 3px;
     background-color: #d9534f;
+
+    &:hover {
+        background-color: #e46c68;
+    }
 }
 
 .learn {
@@ -168,7 +174,7 @@ h1 {
     justify-content: space-between;
 }
 
-.cards button {
+.cards a {
     font-family: sans-serif;
     font-weight: 600;
     border: none;
@@ -217,15 +223,18 @@ footer {
 @media (max-width: 991px) {
     #who {
         p {
-            padding: 0 0 2%;
+            padding: 0 0 5%;
         }
     }
+
     #get-involved {
         padding: 2% 0 2%;
     }
 }
 
-
-
-
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+    nav ol{
+        display: none;
+        
+    }   
+}
